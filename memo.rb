@@ -13,7 +13,7 @@ if memo_type == "1"
   
   memo = STDIN.read
   
-  CSV.open("#{file_name}","w") do |csv|
+  CSV.open("#{file_name}.csv","w") do |csv|
     csv << ["#{memo}"]
   end
   
@@ -26,7 +26,7 @@ elsif memo_type == "2"
   
   memo = STDIN.read
   
-  CSV.open("#{file_name}","a") do |csv|
+  CSV.open("#{file_name}.csv","a") do |csv|
     csv << ["#{memo}"]
   end
 end
